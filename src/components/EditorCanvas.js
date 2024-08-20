@@ -133,8 +133,8 @@ const EditorCanvas = ({ baseImage, logo }) => {
   const [isHovered, setIsHovered] = useState(false); // State to track mouse hover
 
   const clipArea = {
-    x: (750 - 170) / 2,
-    y: (500 - 230) / 2,
+    x: 290,
+    y: 210,
     width: 170,
     height: 230,
   };

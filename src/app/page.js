@@ -24,6 +24,7 @@ const Home = () => {
   return (
     <div style={{ textAlign: "center", padding: "50px" }}>
       <h1>Logo Editor</h1>
+      <UploadLogo onUpload={handleUpload} />
       <label>
         <input
           type="checkbox"
@@ -32,7 +33,6 @@ const Home = () => {
         />
         Remove Background
       </label>
-      <UploadLogo onUpload={handleUpload} />
       <EditorCanvas
         baseImage="https://image-proxy-production.swag.com/convert/swag-prod/5e189fc9bb6a612ceab96b52.jpg?format=jpg&height=750"
         logo={removeBackground ? logoRemoveBg : logo}

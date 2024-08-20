@@ -31,3 +31,19 @@ body {
     text-wrap: balance;
   }
 }
+
+.dropzone {
+  border: 2px dashed #ddd;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.product-selector img {
+  width: 100px;
+  cursor: pointer;
+}
+
+.product-preview {
+  position: relative;
+}

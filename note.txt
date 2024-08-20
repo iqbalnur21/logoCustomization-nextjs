@@ -1,0 +1,9 @@
+
+also create area at the middle so for example 170px x 230px then if image outside the area so dissappear that part of logo
+
+const clipArea = {
+    x: 290, // X coordinate of the clipping area
+    y: 210, // Y coordinate of the clipping area
+    width: 170, // Width of the clipping area
+    height: 230 // Height of the clipping area
+  };

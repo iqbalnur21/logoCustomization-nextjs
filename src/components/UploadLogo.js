@@ -10,7 +10,7 @@ const UploadLogo = ({ onUpload }) => {
 
   return (
     <div>
-      <input type="file" onChange={handleFileChange} accept="image/*" />
+      <input type="file" onChange={handleFileChange} accept=".ai,.svg,.png" />
     </div>
   );
 };

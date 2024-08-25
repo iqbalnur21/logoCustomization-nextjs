@@ -1,7 +1,15 @@
 import React, { useRef, useState, useEffect } from "react";
-import { Stage, Layer, Image, Line, Text, Rect, Group } from "react-konva";
+import {
+  Stage,
+  Layer,
+  Image,
+  Line,
+  Text,
+  Rect,
+  Group,
+  Transformer,
+} from "react-konva";
 import useImage from "use-image";
-import { Transformer } from "react-konva";
 
 // Ruler component to draw horizontal and vertical rulers
 const Ruler = ({ x, y, width, height, orientation }) => {
@@ -158,8 +166,8 @@ const EditorCanvas = ({ baseImage, logo }) => {
       >
         <Layer>
           <Image image={base} width={750} height={500} />
-          <Ruler x={0} y={0} width={750} height={20} orientation="horizontal" />
-          <Ruler x={0} y={0} width={20} height={500} orientation="vertical" />
+          {/* <Ruler x={0} y={0} width={750} height={20} orientation="horizontal" />
+          <Ruler x={0} y={0} width={20} height={500} orientation="vertical" /> */}
           {isHovered && (
             <>
               <Rect
@@ -172,7 +180,7 @@ const EditorCanvas = ({ baseImage, logo }) => {
                 strokeWidth={2}
                 cornerRadius={5}
               />
-              <Ruler
+              {/* <Ruler
                 x={clipArea.x}
                 y={clipArea.y}
                 width={clipArea.width}
@@ -185,7 +193,7 @@ const EditorCanvas = ({ baseImage, logo }) => {
                 width={clipArea.width}
                 height={clipArea.height}
                 orientation="vertical"
-              />
+              /> */}
             </>
           )}
           {logo && (
